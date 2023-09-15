@@ -1,12 +1,16 @@
-import React from 'react'
-
+import React from "react";
+import logo from "../images/tercerLogo.png";
 const Footer = () => {
-  return (
-    <footer>
-        <p>Powered by</p>
-        <img src="./img/DH.png" alt='DH-logo' />
-    </footer>
-  )
-}
+    return (
+        <footer>
+            <div>
+                <p>Powered by</p>
+                <div className="divFooter">
+                    <img src={logo} className="imgLogo" alt="logoRocio" />
+                </div>
+            </div>
+        </footer>
+    );
+};
 
-export default Footer
+export default Footer;

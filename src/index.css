@@ -1,69 +1,175 @@
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
-}
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
 body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+        "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+        "Helvetica Neue", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+        monospace;
+}
+.favButton {
+    background-color: rgba(220, 15, 15, 0.116);
+
+    padding: 10px;
+    margin-bottom: 12px;
+    border-radius: 2px 0 0 2px;
+    width: 100%;
+    cursor: pointer;
+    box-shadow: 0px 1px 10px 5px rgba(40, 40, 40, 0.200);
+}
+.favButton:hover {
+    background-color: rgb(223, 85, 85);
 }
 
 h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+    text-align: center;
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+nav {
+    display: flex;
+    width: 80vw;
+    justify-content: flex-start;
+    padding: 1rem;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+a {
+    color: #000;
+    text-decoration: none;
+    margin: 5px;
+    cursor: pointer;
+}
+a:hover {
+    color: rgb(136, 136, 136);
+}
+
+.dark footer {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem;
+    position: relative;
+    bottom: 0;
+    width: 90%;
+    height: auto;
+    margin-top: 2rem;
+}
+footer {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem;
+    position: relative;
+    bottom: 0;
+    width: 90%;
+    height: auto;
+    margin-top: 2rem;
+}
+
+footer > p {
+    margin: 0;
+    padding-top: 0.7rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 300px;
+    height: 100px;
+    margin: 0 auto;
+}
+.card {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+    padding: 0.5rem 0.5rem 0 0.5rem;
+    border: 0.5px solid rgb(136, 136, 136);
+}
+
+.card:hover {
+    border: 0.5px solid rgb(206, 217, 142);
+}
+
+.card-grid {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 1rem;
+    width: 90vw;
+    height: auto;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+.divDoctor {
+    width: auto;
+    height: auto;
+}
+.imgDoctor {
+    width: 100%;
+    height: 100%;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    display: table;
+    border: 1px solid #ccc;
+}
+
+td,
+th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+.dark {
+    background-color: #12121296;
+    color: white;
+}
+.dark a {
+    color: white;
+}
+.dark .favButton {
+    color: white;
+}
+.divNavegador{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    
+    
+
+}
+.buton{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: auto;
+background-color: aquamarine;
+    height: auto;
+    width: auto;
+}
+.divFooter{
+    width: 200px;
+    height: 100px;
+    
+}
+.imgLogo{
+    box-shadow: 0px 1px 10px 5px rgba(43, 43, 43, 0.507);
+    border-top-right-radius: 50%;
+    border-top-left-radius: 50%;
+    width: 100%;
+    height: 100%;
 }
